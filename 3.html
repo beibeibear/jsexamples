@@ -1,0 +1,24 @@
+﻿<!doctype html>
+<html>
+<meta charset='utf-8'>
+<head>
+<title>函数接受参数并弹出</title>
+<script>
+var myFunc=function(a,b){
+    alert(a.value);
+	alert(b.value);}
+window.onload=function(){
+ var oInput=document.getElementsByTagName('input');
+ var oBtn=document.getElementsByTagName('button')[0];
+ oBtn.onclick=function(){
+    myFunc(oInput[0],oInput[1]);
+	}
+}
+</script>
+</head>
+<body>
+<input type="text" value="陕西省">
+<input type="text" value="西安市">
+<button>传参</button>
+</body>
+</html>
